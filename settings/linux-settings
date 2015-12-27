@@ -1,0 +1,62 @@
+
+Network service discovery disabled:
+	/etc/default/avahi-daemon
+		AVAHI_DAEMON_DETECT_LOCAL=1 на AVAHI_DAEMON_DETECT_LOCAL=0
+--------------------------------------------------------------
+
+Регулировка яркости:
+	/etc/default/grub
+		GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_osi="
+--------------------------------------------------------------
+
+Звук:
+	/usr/lib/pm-utils/power.d/intel-audio-powersave
+		INTEL_AUDIO_POWERSAVE=${INTEL_AUDIO_POWERSAVE:-true}
+		на
+		INTEL_AUDIO_POWERSAVE=${INTEL_AUDIO_POWERSAVE:-false}
+--------------------------------------------------------------
+
+Sublime Text 3:
+	sudo add-apt-repository ppa:webupd8team/sublime-text-3
+	sudo apt-get update
+	sudo apt-get install sublime-text-installer
+--------------------------------------------------------------
+
+Grub Customizer:
+	sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+	sudo apt-get update
+	sudo apt-get install grub-customizer
+--------------------------------------------------------------
+
+Local server:
+	http://fairheart.ru/web/xosting-i-domeny/ustanovka-lamp-na-ubuntu-lokalnyj-server-dlya-linux.html
+--------------------------------------------------------------
+
+Node.js:
+	curl -sL https://deb.nodesource.com/setup | sudo bash -
+	sudo apt-get install -y nodejs
+--------------------------------------------------------------
+
+Grunt:
+	npm install -g grunt-cli
+--------------------------------------------------------------
+
+ICC:
+	http://www.digitalversus.com/lcd-monitor/colour-calibration-profiles-your-monitor-a424/asus-ap410.html
+	Asus Eee PC 1005HA.icc
+	Asus K52J.icc
+--------------------------------------------------------------
+
+Skype:
+ 	sudo apt-get install skype && sudo apt-get -f install
+--------------------------------------------------------------
+
+Git ветка в терминале:
+
+	~/.bashrc
+	export PS1='\[\033[1;35m\]\u:\[\033[1;32m\]`__git_ps1 "%s":`\[\033[1;34m\]\w\[\033[1;35m\]:$\[\033[1;37m\] '
+--------------------------------------------------------------
+
+MC:
+	/usr/share/mc/skins/default.ini
+	~/.config/mc/mc.keymap
